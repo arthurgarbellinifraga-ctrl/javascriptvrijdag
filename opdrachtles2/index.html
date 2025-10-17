@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+  
+  let maandag = 1 ;
+  let dinsdag = 2;
+  let woensdag = 3;
+  let donderdag = 4;
+  let vrijdag = 5;
+  let zaterdag = 6;
+  let zondag = 7;
+let vandaag = new Date().getDay();
+let schooldag = (vandaag === 0) ? 7 : vandaag;
+
+switch (schooldag) {
+  case 1:
+    console.log("maandag = ik moet naar school");
+    break;
+  case 2:
+    console.log("dinsdag = ik moet naar school");
+    break;
+  case 3:
+    console.log("woensdag = ik moet naar school");
+    break;
+  case 4:
+    console.log("donderdag = ik moet naar school");
+    break;
+  case 5:
+    console.log("vrijdag = ik moet naar school");
+    break;
+  case 6:
+    console.log("zaterdag = ik moet niet naar school");
+    break;
+  case 7:
+    console.log("zondag = ik moet niet naar school");
+    break;
+  default:
+    console.log("Onbekende dag");
+}
+
+    </script>
+
+  
+</body>
+</html>
